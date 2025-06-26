@@ -2,6 +2,8 @@
 
 /* Incorporando as fontes no CSS*/
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 /*Criando váriáveis para as cores da paleta do projeto*/
 
 :root {
@@ -11,8 +13,7 @@
     --cor3: #656667;
     
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', sans-serif;
-    --font-assassins: 'Times New Roman', Times, serif;
+    --font-assassins: "Cinzel", serif;
 }
 
 /*Fazendo configurações globais no CSS*/
@@ -38,6 +39,7 @@ header {
     min-height: 50px;
     text-align: center;
     padding-top: 30px;
+    background-image: url(../imagens/topo.jpg);
 }
 
 
@@ -46,18 +48,19 @@ header > p {
     font-size: 1.2em;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    max-width: 600px;
+    max-width: 800px;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 20px;
     margin: auto;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 nav {
-    background-color: var(--cor1);
+    background-color: var(--cor0);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.24);
+    text-align: center;
 }
 
 nav > a {
@@ -69,13 +72,13 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     color: white;
 }
 
 main {
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
     background-color: white;
@@ -88,13 +91,13 @@ main h1 {
     color: var(--cor1);
     font-family: var(--font-assassins);
     font-weight: bolder;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 main h2 {
     color: white;
     font-family: var(--font-assassins);
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bolder;
     background-image: linear-gradient(to right, var(--cor1), var(--cor0));
     text-indent: 8px;
@@ -103,7 +106,7 @@ main h2 {
 
 main p {
     margin: 15px 0px 15px 0px;
-    text-align: justify;
+    text-align: center;
     text-indent: 30px;
     font-size: 1em;
     line-height: 1.8em;
@@ -112,9 +115,8 @@ main p {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
     padding-left: 30px;
-    font-size: 2.8vw;
+    font-size: 1.8vw;
 }
 
 section > p {
@@ -132,23 +134,20 @@ section.imagem {
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.522);
+    background-color: rgba(0, 0, 0, 0.652);
     text-shadow: 1px 1px 0px black;
 }
 section#img01 {
     background-image: url(../imagens/imagem-ac01.jpg);
     background-position: right center;
-    
 }
 
 section#img02 {
     background-image: url(../imagens/imagem-ac02.jpg);
-    
 }
 
 section#img03 {
     background-image: url(../imagens/imagem-ac03.jpg);
-    
 }
 
 div.video {
@@ -168,13 +167,13 @@ div.video > iframe {
 }
 
 aside {
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     padding: 10px;
     border-radius: 8px;
 }
 
 aside > h3 {
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     color: white;
     padding: 8px;
     margin: -10px -10px 0 -10px;
@@ -182,14 +181,21 @@ aside > h3 {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.234);
 }
 
+aside > p {
+    color: var(--cor1);
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: left;
+}
+
 aside > ul {
-    list-style-type: '\2714\00A0\00A0';
+    list-style-type: '\2694\00A0\00A0';
     list-style-position: inside;
     columns: 2;
 }
 
 footer {
-    background-color: var(--cor5);
+    background-color: var(--cor0);
     color: white;
     text-align: center;
     font-size: 0.8em;
@@ -204,5 +210,5 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: var(--cor1);
+    color: var(--cor2);
 }
