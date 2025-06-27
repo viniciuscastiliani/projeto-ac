@@ -21,6 +21,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 /*Começando as tags e códigos*/
@@ -38,23 +39,12 @@ a.externo::after {
 header {
     min-height: 50px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     background-image: url(../imagens/topo.jpg);
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.div1, .div2, .div3 {
-  width: 50%;
-  }
-
-  .div1 {
-    justify-content: center;
-  }
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    }
 
 header > p {
     font-family: var(--font-assassins);
@@ -66,7 +56,7 @@ header > p {
     padding-left: 10px;
     padding-top: 20px;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 nav {
@@ -74,7 +64,7 @@ nav {
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.24);
     text-align: center;
-}
+    }
 
 nav > a {
     color: white;
@@ -110,16 +100,25 @@ main h1 {
 main h2 {
     color: white;
     font-family: var(--font-assassins);
-    font-size: 1em;
+    font-size: 1.6em;
     font-weight: bolder;
     background-image: linear-gradient(to right, var(--cor1), var(--cor0));
     text-indent: 8px;
     padding: 5px;
+    border-bottom: 2px solid var(--cor2);
+}
+
+#resumo {
+    margin: 180px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.8em;
 }
 
 main p {
-    margin: 15px 0px 15px 0px;
-    text-align: center;
+    margin: 20px 0px 5px 0px;
+    text-align: justify;
     text-indent: 30px;
     font-size: 1em;
     line-height: 1.8em;
@@ -137,11 +136,11 @@ section > p {
 }
 
 section.imagem {
-    background-color: rgb(72, 72, 72);
-    color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.27);
     background-size: cover;
     background-attachment: fixed;
+    background-position: top;
+    height: 400px;
 }
 
 section.imagem > p {
@@ -152,7 +151,6 @@ section.imagem > p {
 }
 section#img01 {
     background-image: url(../imagens/imagem-ac01.jpg);
-    background-position: right center;
 }
 
 section#img02 {
@@ -212,7 +210,8 @@ footer {
     color: white;
     text-align: center;
     font-size: 0.8em;
-    padding: 5px;
+    padding: 39px;
+    height: 5px;
 }
 
 footer a {
